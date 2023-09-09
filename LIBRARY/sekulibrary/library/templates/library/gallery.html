@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/gallery.css' %}">
+{% block nav %}
+{{block.super}}
+{% endblock nav %}
+<div class="container">
+    {% if books %}
+        {% if form %}
+        <div class="search-form">
+            <form action="{% url 'book-search' %}">
+                {{form.search}}
+                {{form.search_by}}
+                <input type="submit" name="Submit" id="sub">
+            </form>
+        </div>
+        {% endif %}
+    <section class="lib">
+        {% for book in books %}
+        <article class="book">
+            <img src="{{MEDIA_URL}}{{book.cover}}" alt="cover img">
+            <a href="#" class="fa fa-home" style="text-decoration: none; padding: 10px 12px;color:linear-gradient(rgb(149, 255, 184), rgb(0, 234, 31)); ">
+
+            <h2>Title: {{book.title}}</h2>
+            <h3>ISBN: {{book.isbn}}</h3>
+            <h3>Author: {{book.author}}</h3>
+            <h3>Publisher: {{book.publisher}}</h3>
+            <h3>Price: {{book.price}}</h3>
+            <h3>CallNo: {{book.callno}}</h3>
+        </article>
+        {% endfor %}
+    </section>
+    </div>
+    {% else %}
+    <h2 >{{result}}</h2>
+    <a id="sorry" href="/gallery">BACK</a>
+    {% endif %}
+
+    <div class="footer"> <b>Copyright Ⓒ  2023. South Eastern Kenya University Library. Mon to Fri: 8am-10pm </b></div>
+</div>
+
+<body>
+{% endblock body %}

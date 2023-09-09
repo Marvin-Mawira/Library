@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+ <link rel="stylesheet" href="{% static 'css/gallery.css' %}">
+{% block body %}
+
+       
+        {% block nav %}
+        {{block.super}}
+        {% endblock nav %}
+
+        <div class="wrapper">
+            <div class="logo">
+              <img src="{% static 'images/30.jpg' %}">
+            </div>
+          <section>
+          <div id="bg" style="background-image: url({% static 'images/01.jpg' %})">
+            <br><br><br>
+            <div class="box">
+              <br><br><br><br>
+              <h1 style="text-align: center;">Welcome to seku library</h1><br><br>
+            </div>
+          </div>
+          </section>
+          <div id="down">
+            <h3>Stay Connected</h3>
+            <div class="links">
+            <div class="social">
+            <i class="fa-brands fa-youtube" style="text-decoration: none; padding: 10px 12px;color: rgb(207, 242, 10); "></i>
+            <a target="_blank" href="https://www.youtube.com/channel/UCjTIGQ4ihI4BhU3zJ-I2w4Q"  style="text-decoration: none; padding: 10px 12px;color: rgb(248, 10, 10); ">YouTube</a>
+          </div>
+          <div class="social">
+            <i href="#" class="fa fa-instagram" style="text-decoration: none; padding: 10px 12px;color: rgb(10, 227, 97);"></i>
+            <a target="_blank" href="https://www.instagram.com/sekuuniversity/?hl=en" style="text-decoration: none; padding: 10px 12px;color: rgb(235, 40, 99); ">Instagram</a>
+          </div>
+          <div class="social">
+            <i href="#" class="fa fa-twitter" style="text-decoration: none; padding: 10px 12px;color: white;"></i>
+            <a target="_blank" href="https://twitter.com/discoverseku?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"  style="text-decoration: none; padding: 10px 12px;color: rgb(97, 180, 240); ">Twitter</a>
+          </div>
+          </div>
+          <div id="contact">
+            <div class="details">
+              <a href="#" class="fa fa-home" style="text-decoration: none; padding: 10px 12px;color: rgb(207, 242, 10); ">
+
+              <h2>Main Campus</h2>
+              <a href="#" class="fa fa-home" style="text-decoration: none; padding: 10px 12px;color: white; "> 
+                    P.O. Box 170-90200
+                    KITUI, KENYA
+              </a><br>
+              <a href="#" class="fa fa-phone" style="text-decoration: none; padding: 10px 12px;color: white;">
+                +254 736 116 989</a><br>
+              <a href="#" class="fa fa-envelope" style="text-decoration: none; padding: 10px 12px; color:white;">
+                library@seku.ac.ke</a>
+            </div>
+            <div class="details">
+              <a href="#" class="fa fa-home" style="text-decoration: none; padding: 10px 12px;color: rgb(207, 242, 10); ">
+
+              <h2>Kitui Campus</h2>
+              <a href="#" class="fa fa-home" style="text-decoration: none; padding: 10px 12px;color: white; ">
+                    P.O. Box 170-90200
+                    KITUI, KENYA
+              </a><br>
+              <a href="#" class="fa fa-phone" style="text-decoration: none; padding: 10px 12px;color: white;">
+                +254  727 714 044</a><br>
+              <a href="#" class="fa fa-envelope" style="text-decoration: none; padding: 10px 12px; color:white;">
+                kituitowncampus@seku.ac.ke</a>
+            </div>
+
+            <div class="details">
+              <a href="#" class="fa fa-home" style="text-decoration: none; padding: 10px 12px;color: rgb(207, 242, 10); ">
+
+              <h2>Wote Campus</h2>
+              <a href="#" class="fa fa-home" style="text-decoration: none; padding: 10px 12px;color: white; ">
+                  P.O. Box 441 - 90300
+                  MAKUENI, KENYA
+              </a><br>
+              <a href="#" class="fa fa-phone" style="text-decoration: none; padding: 10px 12px;color: white;">
+                +254 111 417 951</a><br>
+              <a href="#" class="fa fa-envelope" style="text-decoration: none; padding: 10px 12px; color:white;">
+                wotecampus@seku.ac.ke</a>
+            </div>   
+          </div>
+        <div class="footer"> <b>Copyright Ⓒ  2023. South Eastern Kenya University Library. Mon to Fri: 8am-10pm </b></div>
+    </div>
+        </div>
+{% endblock body %}

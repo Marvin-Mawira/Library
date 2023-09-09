@@ -1,0 +1,60 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #7abecc;
+}
+.user_card {
+    width: 350px;
+    margin: auto;
+    margin-top: 10px;
+    top: 100px;
+    text-align: center;
+    background: #74cfbf;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+
+}
+
+.form_container {
+    margin-top: 15px;
+    padding: 10px;
+}
+
+#form-title{
+    color: #094a0d;
+    
+}
+input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.login_btn {
+    width: 50%;
+    background: #3340ff;
+    color: white;
+    padding: 10px;
+}
+#messages{
+    background-color: grey;
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.footer{
+    height: 10px;
+    margin: 210px;
+    color: rgb(255, 5, 5);
+    text-align: center;
+    font-size: 16px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+  <title>SEKU | LIBRARY</title>
+</head>
+<body>
+    {% block body %}
+
+    {% block nav %}
+
+    
+ <div id="background">
+  
+    <div id="top">
+        <a href="#" class="fa fa-envelope" style="text-decoration:none;  color: rgb(48, 239, 15); font-size: initial;">
+            info@seku.ac.ke 
+          </a>
+          <a href="#" class="fa fa-phone" style="text-decoration:none; color: rgb(11, 236, 209);">
+             +254 736 116 989
+          </a>
+          <a href="#" class=" fa fa-phone" style="text-decoration:none; color: rgb(243, 251, 7);">
+            Arid to Green ....Transforming Lives
+          </a>
+          <a href="#" class="fa fa-facebook" style="text-decoration:none; padding:7px; float:right; color: white;"></a>
+          <a href="#" class="fa fa-instagram" style="text-decoration:none; padding:7px; float:right; color: white;"></a>
+          <a href="#" class="fa fa-twitter" style="text-decoration:none;  padding: 7px ; float:right; color: white;"></a>
+    </div>
+
+    <div id="menu">
+        <div id="logo">SEKU<b style="color:#09960d ;"> LIBRARY</b>
+        </div>
+        <div id="menu1">
+            <ul>
+                <a href="/home"><li class="fa fa-home">Home</li></a>
+                <a href="/gallery"><li class="fa fa-image">Catalogue</li></a>
+                <a href="/admin"><li class="fa fa-user">Admin Login</li></a>
+                <a href="/register"><li class="fa fa-registered">Register</li></a>
+                <a href="/login"><li class="fa fa-user">Login</li></a>
+         </ul>
+         
+        </div>   
+    </div>
+    {% endblock nav %}
+
+    {% block footer %}
+
+    <div class="footer"> Copyright © 2023. South Eastern Kenya University Library. Mon to Fri: 8am-10pm </div>
+  </div>
+
+    {% endblock footer %}
+
+
+    {% endblock body %}
+</body>
+</html>
